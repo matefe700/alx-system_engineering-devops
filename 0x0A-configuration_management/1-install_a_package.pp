@@ -1,4 +1,4 @@
-# install puppet-lint
+# install flask
 # package
 
 package { 'flask':
