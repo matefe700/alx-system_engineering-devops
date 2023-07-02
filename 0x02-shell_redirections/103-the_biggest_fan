@@ -1,12 +1,4 @@
 #!/bin/bash
-
-# cut -f1 -d$'\t' | sort | uniq -c | tr -s ' ' | sort -t' ' -k1 -nr | head -11 | cut -d' ' -f3
-
-# Read the file path from command line argument
-file_path=$1
-
-# Extract the hosts from the log file and count the occurrences
 cut -f1 | sort | uniq -c | sort -nr | head -n 11 | awk '{ print $2 }'
 
-# Display the top hostsecho "$hosts" |
 
